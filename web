@@ -1,0 +1,41 @@
+Route::get('/buenos dias', function () {
+    return 'en que puedo ayudarle? ' ;
+});
+
+Route::get('/hola', function () {
+    return 'podria indicarme su nombre? ' ;
+});
+
+Route::get('/buenas tardes', function () {
+    return 'podria darme su direccion ' ;
+});
+
+Route::get('/buenas noches', function () {
+    return 'podria darme su telefono ' ;
+});
+
+Route::get('/buenas', function () {
+    return 'podria darme su telefono ' ;
+});
+
+
+
+Route::get('/nombre/{nombre}', function ($nombre) {
+    return 'su nombre es ' . $nombre;
+});
+
+Route::get('/edad/{numero}', function ($numero) {
+    return 'su edad es ' . $numero;
+});
+
+Route::get('/dni/{documento}', function ($documento) {
+    return 'su dni es ' . $documento;
+});
+
+Route::get('/telefono/{telefono}', function ($telefono) {
+    return 'su telefono es ' . $telefono;
+});
+
+Route::get('/direccion/{direccion}', function ($direccion) {
+    return 'su direccion es ' . $direccion;
+});
